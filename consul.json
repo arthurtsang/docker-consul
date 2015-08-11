@@ -1,0 +1,9 @@
+{
+  "server": true,
+  "data_dir": "/var/consul",
+  "log_level": "INFO",
+  "enable_syslog": false,
+  "client_addr": "0.0.0.0",
+  "ui_dir": "/ui",
+  "disable_update_check": true
+}
