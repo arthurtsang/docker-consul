@@ -10,4 +10,6 @@ consul:
     - "8400:8400"
     - "8500:8500"
     - "53:53/udp"
+  volumes:
+    - /var/consul:/var/consul
   command: agent -config-dir /opt/config -advertise ip.node1 -bootstrap-expect 2 -retry-join node1 -retry-join node2
